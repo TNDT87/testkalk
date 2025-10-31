@@ -25,7 +25,7 @@ document.getElementById('calcBtn').addEventListener('click', () => {
   document.getElementById('results').innerHTML = `
     <p>Effektbehov: <b>${designLoad_kW.toFixed(2)} kW</b></p>
     <p>Årlig varmebehov: <b>${annualHeat_kWh.toFixed(0)} kWh</b></p>
-    <p>Kostnad panel: <b>${cost_direct.toFixed(0)} kr</b></p>
+    <p>Kostnad elektrisk oppvarming: <b>${cost_direct.toFixed(0)} kr</b></p>
     <p>Kostnad varmepumpe: <b>${cost_hp.toFixed(0)} kr</b></p>
     <p>Årlig besparelse: <b>${savings.toFixed(0)} kr</b></p>
     <p>Tilbakebetalingstid: <b>${payback} år</b></p>`;
