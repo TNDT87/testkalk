@@ -29,4 +29,8 @@ document.getElementById('calcBtn').addEventListener('click', () => {
     <p>Kostnad varmepumpe: <b>${cost_hp.toFixed(0)} kr</b></p>
     <p>Årlig besparelse: <b>${savings.toFixed(0)} kr</b></p>
     <p>Tilbakebetalingstid: <b>${payback} år</b></p>`;
+
+  document.getElementById('insulation').addEventListener('change', () => {
+  const insulation = document.getElementById('insulation').value;
+  document.getElementById('customWpm2').placeholder = DEFAULT_WPM2[insulation];
 });
